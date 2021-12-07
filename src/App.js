@@ -38,7 +38,7 @@ class App extends Component {
         showAdminBoard: user.roles.includes("ROLE_ADMIN"),
       });
     }
-    
+
     EventBus.on("logout", () => {
       this.logOut();
     });
@@ -96,6 +96,46 @@ class App extends Component {
                 </Link>
               </li>
             )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/producto"} className="nav-link">
+                  Producto
+                </Link>
+              </li>
+            )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/cliente"} className="nav-link">
+                  Cliente
+                </Link>
+              </li>
+            )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/venta"} className="nav-link">
+                  Venta
+                </Link>
+              </li>
+            )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/reporte"} className="nav-link">
+                  Reporte
+                </Link>
+              </li>
+            )}
+
+            {showAdminBoard && (
+              <li className="nav-item">
+                <Link to={"/consolidado"} className="nav-link">
+                  Consolidado
+                </Link>
+              </li>
+            )}
           </div>
 
           {currentUser ? (
@@ -140,7 +180,7 @@ class App extends Component {
           </Switch>
         </div>
 
-        { /*<AuthVerify logOut={this.logOut}/> */ }
+        { /*<AuthVerify logOut={this.logOut}/> */}
       </div>
     );
   }
