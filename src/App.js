@@ -12,6 +12,11 @@ import Profile from "./components/profile.component";
 import BoardUser from "./components/board-user.component";
 import BoardModerator from "./components/board-moderator.component";
 import BoardAdmin from "./components/board-admin.component";
+import ProductoAdmin from "./components/producto-admin.component";
+import ClienteAdmin from "./components/cliente-admin.component";
+import VentaAdmin from "./components/venta-admin.component";
+import ReporteAdmin from "./components/reporte-admin.component";
+import ConsolidadoAdmin from "./components/consolidado-admin.component";
 
 // import AuthVerify from "./common/auth-verify";
 import EventBus from "./common/EventBus";
@@ -177,6 +182,11 @@ class App extends Component {
             <Route path="/user" component={BoardUser} />
             <Route path="/mod" component={BoardModerator} />
             <Route path="/admin" component={BoardAdmin} />
+            <Route path="/producto" component={ProductoAdmin} />
+            <Route path="/cliente" component={ClienteAdmin} />
+            <Route path="/venta" component={VentaAdmin} />
+            <Route path="/reporte" component={ReporteAdmin} />
+            <Route path="/consolidado" component={ConsolidadoAdmin} />
           </Switch>
         </div>
 

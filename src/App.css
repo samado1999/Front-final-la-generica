@@ -1,3 +1,30 @@
+/* PRODUCTOS */
+.producto-container {
+  padding: 100px 50px 0 50px;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  overflow-y: auto;
+}
+.boton-subir-archivo {
+  /* border: 3px inset rgba(255, 255, 0); */
+  border-radius: 10px;
+  padding: 10px;
+  /* margin: 10px; */
+  margin-left: -22%;
+  cursor: pointer;
+  z-index: 2;
+}
+.boton-publicar {
+  /* border: 3px inset #3cff00; */
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 12%;
+  cursor: pointer;
+  z-index: 2;
+}
+
 label {
   display: block;
   margin-top: 10px;
@@ -29,4 +56,376 @@ label {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+}
+/* tableta */
+@media screen and (max-width: 768px) {
+  .tittle-color {
+    height: 116px;
+  }
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-bottom: 10px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100px;
+    z-index: 1;
+  }
+  .title-color {
+    height: 116px;
+  }
+}
+/* telefono tamaño L */
+@media screen and (max-width: 425px) {
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    top: 225px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+    margin-right: 131px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: 37px;
+    margin-right: 37px;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo,
+  .titulo-productos {
+    height: 24px;
+    width: 300px;
+    margin-left: 60px;
+    margin-right: 0;
+    position: center;
+    z-index: 1;
+  }
+  .title-color {
+    height: 156px;
+  }
+}
+/* telefono tamaño M */
+@media screen and (max-width: 375px) {
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-bottom: 10px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100px;
+    z-index: 1;
+  }
+  .title-color {
+    height: 156px;
+  }
+}
+/* telefono tamaño S */
+@media screen and (max-width: 320px) {
+  .cliente-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .consolidado-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .login-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .reporte-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .venta-container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+  }
+  .producto-container {
+    margin-left: 0px;
+    right: 0px;
+    left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    overflow-y: scroll;
+  }
+  .boton-publicar {
+    margin-bottom: 10px;
+    margin-left: 112px;
+    margin-right: 112px;
+    width: 124px;
+    z-index: 1;
+  }
+  .boton-subir-archivo {
+    margin-left: auto;
+    margin-right: auto;
+    position: center;
+    width: 350px;
+    z-index: 1;
+  }
+  .botones {
+    position: center;
+    z-index: 1;
+  }
+  .titulo {
+    margin-left: 0;
+    margin-right: 0;
+    position: center;
+    width: 100px;
+    z-index: 1;
+  }
+  .title-color {
+    height: 206px;
+  }
 }

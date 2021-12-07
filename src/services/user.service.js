@@ -20,6 +20,26 @@ class UserService {
   getAdminBoard() {
     return axios.get(API_URL + 'admin', { headers: authHeader() });
   }
+
+  getAdminProducto() {
+    return axios.get(API_URL + 'admin-producto', { headers: authHeader() });
+  }
+
+  getAdminCliente() {
+    return axios.get(API_URL + 'admin-cliente', { headers: authHeader() });
+  }
+
+  getAdminReporte() {
+    return axios.get(API_URL + 'admin-reporte', { headers: authHeader() });
+  }
+
+  getAdminConsolidado() {
+    return axios.get(API_URL + 'admin-consolidado', { headers: authHeader() });
+  }
+
+  getAdminVenta() {
+    return axios.get(API_URL + 'admin-venta', { headers: authHeader() });
+  }
 }
 
 export default new UserService();
