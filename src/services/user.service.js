@@ -21,12 +21,24 @@ class UserService {
     return axios.get(API_URL + 'admin', { headers: authHeader() });
   }
 
-  getAdminProducto() {
-    return axios.get(API_URL + 'admin-producto', { headers: authHeader() });
-  }
-
   getAdminCliente() {
     return axios.get(API_URL + 'admin-cliente', { headers: authHeader() });
+  }
+
+  getAdminClienteCreate(cliente) {
+    return axios.post(API_URL + 'clientes/save', cliente, { headers: authHeader() })
+  }
+
+  getAdminClienteUpdate(cliente) {
+    return axios.put(API_URL + 'clientes/update', cliente, { headers: authHeader() })
+  }
+
+  getAdminClienteConsultar(cliente) {
+    return axios.get(API_URL + 'buscar/' + cliente, { headers: authHeader() })
+  }
+
+  getAdminProducto(list) {
+    return axios.post(API_URL + 'admin-producto', list, { headers: authHeader() })
   }
 
   getAdminReporte() {

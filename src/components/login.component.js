@@ -5,11 +5,16 @@ import CheckButton from "react-validation/build/button";
 
 import AuthService from "../services/auth.service";
 
+// In line style
+const styles = {
+  backgroundColor: "#83acdf",
+  borderColor: "#83acdf"
+};
 const required = value => {
   if (!value) {
     return (
       <div className="alert alert-danger" role="alert">
-        This field is required!
+        Este campo es requerido
       </div>
     );
   }
@@ -96,7 +101,7 @@ export default class Login extends Component {
             }}
           >
             <div className="form-group">
-              <label htmlFor="username">Username</label>
+              <label htmlFor="username">Usuario</label>
               <Input
                 type="text"
                 className="form-control"
@@ -108,7 +113,7 @@ export default class Login extends Component {
             </div>
 
             <div className="form-group">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">Contraseña</label>
               <Input
                 type="password"
                 className="form-control"
@@ -122,12 +127,13 @@ export default class Login extends Component {
             <div className="form-group">
               <button
                 className="btn btn-primary btn-block"
+                style={styles}
                 disabled={this.state.loading}
               >
                 {this.state.loading && (
                   <span className="spinner-border spinner-border-sm"></span>
                 )}
-                <span>Login</span>
+                <span>Iniciar sesión</span>
               </button>
             </div>
 

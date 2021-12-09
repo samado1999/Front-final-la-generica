@@ -21,6 +21,11 @@ import ConsolidadoAdmin from "./components/consolidado-admin.component";
 // import AuthVerify from "./common/auth-verify";
 import EventBus from "./common/EventBus";
 
+// In line style
+const styles = {
+  backgroundColor: "#83acdf",
+};
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -63,25 +68,26 @@ class App extends Component {
   }
 
   render() {
-    const { currentUser, showModeratorBoard, showAdminBoard } = this.state;
+    const { currentUser, showAdminBoard } = this.state;
 
     return (
       <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <nav className="navbar navbar-expand navbar-dark" style={styles}>
           <Link to={"/"} className="navbar-brand">
-            bezKoder
+            Tienda genérica
           </Link>
           <div className="navbar-nav mr-auto">
+            {/*
             <li className="nav-item">
               <Link to={"/home"} className="nav-link">
-                Home
+                <p className="p-menu">Home</p>
               </Link>
             </li>
 
             {showModeratorBoard && (
               <li className="nav-item">
                 <Link to={"/mod"} className="nav-link">
-                  Moderator Board
+                  <p className="p-menu">Moderator Board</p>
                 </Link>
               </li>
             )}
@@ -89,7 +95,7 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/admin"} className="nav-link">
-                  Admin Board
+                  <p className="p-menu">Admin Board</p>
                 </Link>
               </li>
             )}
@@ -97,15 +103,16 @@ class App extends Component {
             {currentUser && (
               <li className="nav-item">
                 <Link to={"/user"} className="nav-link">
-                  User
+                  <p className="p-menu">User</p>
                 </Link>
               </li>
             )}
+            */}
 
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/producto"} className="nav-link">
-                  Producto
+                  <p className="p-menu">Producto</p>
                 </Link>
               </li>
             )}
@@ -113,7 +120,7 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/cliente"} className="nav-link">
-                  Cliente
+                  <p className="p-menu">Cliente</p>
                 </Link>
               </li>
             )}
@@ -121,7 +128,7 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/venta"} className="nav-link">
-                  Venta
+                  <p className="p-menu">Venta</p>
                 </Link>
               </li>
             )}
@@ -129,7 +136,7 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/reporte"} className="nav-link">
-                  Reporte
+                  <p className="p-menu">Reporte</p>
                 </Link>
               </li>
             )}
@@ -137,41 +144,43 @@ class App extends Component {
             {showAdminBoard && (
               <li className="nav-item">
                 <Link to={"/consolidado"} className="nav-link">
-                  Consolidado
+                  <p className="p-menu">Consolidado</p>
                 </Link>
               </li>
             )}
           </div>
 
-          {currentUser ? (
-            <div className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to={"/profile"} className="nav-link">
-                  {currentUser.username}
-                </Link>
-              </li>
-              <li className="nav-item">
-                <a href="/login" className="nav-link" onClick={this.logOut}>
-                  LogOut
-                </a>
-              </li>
-            </div>
-          ) : (
-            <div className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link to={"/login"} className="nav-link">
-                  Login
-                </Link>
-              </li>
+          {
+            currentUser ? (
+              <div className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to={"/profile"} className="nav-link">
+                    <p className="p-menu">{currentUser.username}</p>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <a href="/login" className="nav-link" onClick={this.logOut}>
+                    <p className="p-menu">Salir</p>
+                  </a>
+                </li>
+              </div>
+            ) : (
+              <div className="navbar-nav ml-auto">
+                <li className="nav-item">
+                  <Link to={"/login"} className="nav-link">
+                    <p className="p-menu">Iniciar sesión</p>
+                  </Link>
+                </li>
 
-              <li className="nav-item">
-                <Link to={"/register"} className="nav-link">
-                  Sign Up
-                </Link>
-              </li>
-            </div>
-          )}
-        </nav>
+                <li className="nav-item">
+                  <Link to={"/register"} className="nav-link">
+                    <p className="p-menu">Registrar</p>
+                  </Link>
+                </li>
+              </div>
+            )
+          }
+        </nav >
 
         <div className="container mt-3">
           <Switch>
@@ -191,7 +200,7 @@ class App extends Component {
         </div>
 
         { /*<AuthVerify logOut={this.logOut}/> */}
-      </div>
+      </div >
     );
   }
 }
